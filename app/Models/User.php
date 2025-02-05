@@ -17,8 +17,11 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+    //a way to telling the model that these are the fields we need to enter
     protected $fillable = [
-        'name',
+        'fullname',
+        'phone',
+        'photo_path',
         'email',
         'password',
     ];

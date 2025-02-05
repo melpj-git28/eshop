@@ -12,6 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         //
+        $middleware->redirectGuestsTo('user.login');
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
